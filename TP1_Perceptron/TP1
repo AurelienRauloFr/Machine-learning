@@ -1,0 +1,15 @@
+from tp_perceptron_source import *
+
+
+
+#### Question 1
+
+X1, y1 = rand_bi_gauss(n1=100, n2=100, mu1=[1, 1], mu2=[-1, -1], sigmas1=[0.1, 0.1],sigmas2=[0.1, 0.1])
+plot_2d(X1, y1)
+"""""
+X2, y2 = rand_clown(n1=100, n2=100, sigma1=1, sigma2=2)
+plot_2d(X2, y2)
+
+X3, y3 = rand_checkers(n1=100, n2=100, sigma=0.1)
+plot_2d(X3, y3)
+"""
