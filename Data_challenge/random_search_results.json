@@ -1,0 +1,19 @@
+{
+    "best_params": {
+        "classifier__C": 0.004185822729546971,
+        "classifier__l1_ratio": 0.8,
+        "classifier__penalty": "l1"
+    },
+    "best_score": 0.04860612316438788,
+    "results": [
+        {
+            "mean_test_score": 0.04860612316438788,
+            "params": {
+                "classifier__C": 0.004185822729546971,
+                "classifier__l1_ratio": 0.8,
+                "classifier__penalty": "l1"
+            },
+            "std_test_score": 0.0008767523256332163
+        }
+    ]
+}

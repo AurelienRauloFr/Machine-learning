@@ -1,0 +1,22 @@
+[
+    {
+        "configuration": "config_1",
+        "final_score": 0.7465044154773189
+    },
+    {
+        "configuration": "config_2",
+        "final_score": 0.7511854971944139
+    },
+    {
+        "configuration": "config_3",
+        "final_score": 0.7518932775309439
+    },
+    {
+        "configuration": "config_4",
+        "final_score": 0.7672847670480113
+    },
+    {
+        "configuration": "config_5",
+        "final_score": 0.7581336144923174
+    }
+]
