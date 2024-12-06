@@ -1,0 +1,1 @@
+def plot_gallery(title, images):
