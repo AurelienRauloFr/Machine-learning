@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#"
+     xml:base="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Tp_noté_Surpeche="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/Caught -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/Caught"/>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/QuotaLimit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/QuotaLimit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/hasQuota -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/hasQuota"/>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/isCaughtIn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/isCaughtIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Caught -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Caught">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingVessel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#hasQuota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#hasQuota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingQuota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#isCaughtIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#isCaughtIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#QuotaLimit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#QuotaLimit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingQuota"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingQuota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingQuota">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingVessel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingVessel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Caught"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#isCaughtIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#hasQuota"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingQuota"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#isCaughtIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#FishingQuota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#FishingQuota"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ChalutierCommercial1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ChalutierCommercial1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingVessel"/>
+        <Tp_noté_Surpeche:Caught rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Morue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Morue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Morue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+        <Tp_noté_Surpeche:hasQuota rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaMorue"/>
+        <Tp_noté_Surpeche:isCaughtIn rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneAtlantiqueNord"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Palangrier1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Palangrier1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingVessel"/>
+        <Tp_noté_Surpeche:Caught rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Thon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#PetitBateauDePêche1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#PetitBateauDePêche1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingVessel"/>
+        <Tp_noté_Surpeche:Caught rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Morue"/>
+        <Tp_noté_Surpeche:Caught rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Saumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaMorue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaMorue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#FishingQuota"/>
+        <Tp_noté_Surpeche:QuotaLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">167</Tp_noté_Surpeche:QuotaLimit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaSaumon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaSaumon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#FishingQuota"/>
+        <Tp_noté_Surpeche:QuotaLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">436</Tp_noté_Surpeche:QuotaLimit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaThon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaThon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#FishingQuota"/>
+        <Tp_noté_Surpeche:QuotaLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9372</Tp_noté_Surpeche:QuotaLimit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Saumon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Saumon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+        <Tp_noté_Surpeche:hasQuota rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaSaumon"/>
+        <Tp_noté_Surpeche:isCaughtIn rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneAtlantiqueNord"/>
+        <Tp_noté_Surpeche:isCaughtIn rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZonePacifique"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Thon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#Thon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#Species"/>
+        <Tp_noté_Surpeche:hasQuota rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#QuotaThon"/>
+        <Tp_noté_Surpeche:isCaughtIn rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneAtlantiqueNord"/>
+        <Tp_noté_Surpeche:isCaughtIn rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneMéditerranéenne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneAtlantiqueNord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneAtlantiqueNord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneMéditerranéenne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZoneMéditerranéenne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZonePacifique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl/#ZonePacifique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/salimatoutraore/ontologies/Tp_noté_Surpeche.owl#FishingZone"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

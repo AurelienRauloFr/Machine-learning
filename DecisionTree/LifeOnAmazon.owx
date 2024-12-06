@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ahmed/ontologies/2023/10/LifeOnAmazon"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ahmed/ontologies/2023/10/LifeOnAmazon">
+    <Prefix name="" IRI="http://www.semanticweb.org/ahmed/ontologies/2023/10/LifeOnAmazon/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicalFeatures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LivingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#flowsThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#livesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pollinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#preysOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLifespan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/ahmed/ontologies/2023/10/amazoneOntology#hasLifespan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmazonLily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmazonRiver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autumn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beetle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlueMorphoButterfly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Capybara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HoneyBee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jaguar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Macaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piranha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rabbit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Summer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Winter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flower"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#LivingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest"/>
+        <Class IRI="#GeographicalFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insect"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#LivingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#GeographicalFeatures"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Forest"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#AmazonLily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#AmazonRiver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Autumn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insect"/>
+        <NamedIndividual IRI="#Beetle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insect"/>
+        <NamedIndividual IRI="#BlueMorphoButterfly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Capybara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plant"/>
+        <NamedIndividual IRI="#Grass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insect"/>
+        <NamedIndividual IRI="#HoneyBee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Jaguar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bird"/>
+        <NamedIndividual IRI="#Macaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#Piranha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Rabbit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Spring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Summer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Tiger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#Winter"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#AmazonLily"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#flowsThrough"/>
+        <NamedIndividual IRI="#AmazonRiver"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Beetle"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#BlueMorphoButterfly"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Capybara"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pollinates"/>
+        <NamedIndividual IRI="#HoneyBee"/>
+        <NamedIndividual IRI="#Flower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Jaguar"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preysOn"/>
+        <NamedIndividual IRI="#Jaguar"/>
+        <NamedIndividual IRI="#Capybara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preysOn"/>
+        <NamedIndividual IRI="#Jaguar"/>
+        <NamedIndividual IRI="#Rabbit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Macaw"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preysOn"/>
+        <NamedIndividual IRI="#Macaw"/>
+        <NamedIndividual IRI="#Beetle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Piranha"/>
+        <NamedIndividual IRI="#AmazonRiver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Rabbit"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#livesIn"/>
+        <NamedIndividual IRI="#Tiger"/>
+        <NamedIndividual IRI="#AmazonForest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preysOn"/>
+        <NamedIndividual IRI="#Tiger"/>
+        <NamedIndividual IRI="#Rabbit"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#Beetle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#BlueMorphoButterfly"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#Capybara"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#HoneyBee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2-5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#Jaguar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/ahmed/ontologies/2023/10/amazoneOntology#hasLifespan"/>
+        <NamedIndividual IRI="#Macaw"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#Piranha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#Rabbit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLifespan"/>
+        <NamedIndividual IRI="#Tiger"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#flowsThrough"/>
+        <Class IRI="#Forest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#livesIn"/>
+        <Class IRI="#GeographicalFeatures"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pollinates"/>
+        <Class IRI="#Plant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#preysOn"/>
+        <Class IRI="#LivingEntity"/>
+    </ObjectPropertyDomain>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/ahmed/ontologies/2023/10/amazoneOntology#hasLifespan"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/ahmed/ontologies/2023/10/amazoneOntology#hasLifespan"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
